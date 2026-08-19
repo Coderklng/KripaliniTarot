@@ -234,6 +234,7 @@ export default function TarotCard() {
               >
                 Book Now <ArrowRight className="w-3.5 h-3.5" />
               </button>
+              
             </div>
           ))}
         </div>
@@ -253,7 +254,7 @@ export default function TarotCard() {
       </section>
 
       {/* SECTION 3: CHOOSE YOUR READING (PRICING) */}
-      <section id="pricing" className="py-20 px-4 max-w-7xl mx-auto">
+      {/* <section id="pricing" className="py-20 px-4 max-w-7xl mx-auto">
         <SectionHeader title="Choose Your Reading" />
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
           {pricingData.map((plan, index) => (
@@ -279,20 +280,10 @@ export default function TarotCard() {
                   </li>
                 ))}
               </ul>
-              <button
-                onClick={() => handleOpenBooking(plan)}
-                className={`w-full py-3.5 rounded-2xl text-xs font-semibold transition-all flex items-center justify-center gap-2 cursor-pointer shadow-md ${
-                  plan.isPopular
-                    ? "bg-gradient-to-r from-purple-700 to-amber-500 hover:brightness-110 text-white"
-                    : "bg-purple-900/60 hover:bg-purple-800 text-amber-200 border border-purple-500/30"
-                }`}
-              >
-                Book Now <Sparkles className="w-3.5 h-3.5" />
-              </button>
             </div>
           ))}
         </div>
-      </section>
+      </section> */}
 
       {/* SECTION 4: FAQ & CONTACT FORM */}
       <section id="contact" className="py-20 px-4 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10">
@@ -322,7 +313,7 @@ export default function TarotCard() {
           <h3 className="text-2xl font-serif text-amber-200 mb-6">Get in Touch</h3>
 
           <div className="space-y-3 mb-6 text-xs text-zinc-300">
-            <div className="flex items-center gap-3"><Phone className="w-4 h-4 text-amber-400" /> <span>+91 98765 43210</span></div>
+            <div className="flex items-center gap-3"><Phone className="w-4 h-4 text-amber-400" /> <span>+91 7014997902</span></div>
             <div className="flex items-center gap-3"><Mail className="w-4 h-4 text-amber-400" /> <span>khushii27sharma@gmail.com</span></div>
             <div className="flex items-center gap-3"><MapPin className="w-4 h-4 text-amber-400" /> <span>Jaipur, Rajasthan, India</span></div>
           </div>
