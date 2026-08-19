@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+
+.sidebar::-webkit-scrollbar{
+    height:2px;
+    width:2px;
+}
+
+@utility no-scrollbar {
+  /* Chrome, Safari, Edge */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  /* Firefox */
+  scrollbar-width: none;
+  /* IE & Edge */
+  -ms-overflow-style: none;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Puri website ka default body text */
+  body {
+    @apply text-sm md:text-base leading-relaxed;
+  }
+
+  /* Headings ka global size balance */
+  h1 {
+    @apply text-3xl md:text-5xl font-serif;
+  }
+  h2 {
+    @apply text-2xl md:text-3xl font-serif;
+  }
+  h3 {
+    @apply text-xl md:text-2xl font-serif;
+  }
+  h4 {
+    @apply text-lg md:text-xl font-serif;
+  }
+
+  /* Input fields ka text globally control karega */
+  input, textarea {
+    @apply text-sm md:text-base;
+  }
+}
