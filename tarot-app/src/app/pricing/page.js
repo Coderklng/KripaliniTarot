@@ -509,9 +509,7 @@ export default function PricingPage() {
               {/* Dynamic QR Code Generation */}
               <div className="bg-white p-3 rounded-2xl inline-block mb-3 shadow-inner relative w-48 h-48 mx-auto flex items-center justify-center">
                 <Image
-                  src={`https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${encodeURIComponent(
-                    `upi://pay?pa=${UPI_ID}&pn=Kripalini%20Tarot&am=${activePlan.price}&cu=INR&tn=Order_${currentOrderId || 'Booking'}`
-                  )}`}
+                  src="/images/UPI/upi-qr.jpeg"
                   alt="Dynamic UPI QR Code"
                   fill
                   unoptimized
